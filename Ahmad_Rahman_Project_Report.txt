@@ -1,0 +1,132 @@
+Project Report: AI-Driven Candidate Evaluation System
+
+1. INTRODUCTION
+
+This project report details the development of an AI-driven backend service for evaluating candidate CVs and project reports against job vacancies. The system leverages Large Language Models (LLMs) for intelligent analysis, incorporating prompt design, chaining, Retrieval-Augmented Generation (RAG), and robust error handling.
+
+2. OBJECTIVES
+
+The primary objectives of this project were to:
+- Build a scalable backend service using Node.js and Express.js
+- Implement AI workflows for automated candidate evaluation
+- Create RESTful APIs for file upload and evaluation processing
+- Integrate LLM capabilities with proper error handling and resilience
+- Provide structured evaluation reports with match rates and feedback
+
+3. METHODOLOGY
+
+3.1 Technology Stack
+- Backend Framework: Node.js with Express.js
+- File Processing: Multer for uploads, pdf-parse and mammoth for document parsing
+- AI Integration: OpenAI API with fallback mocking
+- Vector Database: Simulated vector DB for context retrieval
+- Database: In-memory storage for simplicity (production would use persistent DB)
+
+3.2 Architecture
+The system follows a modular architecture with separate concerns:
+- Routes: Handle HTTP requests and responses
+- Services: Core business logic and AI processing
+- Utils: File parsing and helper functions
+- Config: Job descriptions and evaluation rubrics
+
+4. IMPLEMENTATION
+
+4.1 API Endpoints
+- POST /upload: Accepts CV and project report files (text, PDF, docx)
+- POST /evaluate: Initiates asynchronous evaluation process
+- GET /result/{id}: Retrieves evaluation results
+
+4.2 AI Pipeline
+The evaluation pipeline consists of four main steps:
+
+Step 1: CV Information Extraction
+- Prompt: "Extract structured info from CV: skills, experiences, projects. CV: {content}"
+- Uses LLM to parse unstructured CV text into structured data
+
+Step 2: Job Matching
+- Retrieves job description from vector DB
+- Compares extracted CV data with job requirements
+- Generates match rate and feedback
+
+Step 3: Project Evaluation
+- Retrieves scoring rubric from vector DB
+- Evaluates project report against standardized parameters
+- Scores on correctness, code quality, resilience, documentation, creativity
+
+Step 4: Result Aggregation
+- Combines CV and project scores
+- Generates overall summary and recommendations
+
+4.3 Prompt Design & Chaining
+- Chained prompts ensure context flows between LLM calls
+- Temperature set to 0.3 for consistent responses
+- Validation layer ensures stable outputs
+
+4.4 RAG Implementation
+- Job description and rubric stored in simulated vector DB
+- Context retrieved based on evaluation type (CV vs project)
+- Relevant sections injected into prompts for accurate assessment
+
+4.5 Error Handling & Resilience
+- Retry mechanism with exponential backoff for LLM API failures
+- Graceful fallback to mock responses when API unavailable
+- Comprehensive error logging and status tracking
+
+5. RESULTS
+
+5.1 Functionality
+- Successfully implemented all required API endpoints
+- AI pipeline processes CVs and projects accurately
+- Async processing prevents blocking and improves user experience
+- Error handling ensures system stability
+
+5.2 Performance Metrics
+- File parsing supports multiple formats (text, PDF, docx)
+- LLM integration with OpenAI API and mock fallback
+- Response times optimized for real-time evaluation
+
+5.3 Evaluation Accuracy
+- CV match rate calculation based on skills, experience, achievements
+- Project scoring on 5 parameters, aggregated to final score
+- Feedback generation provides actionable insights
+
+6. CHALLENGES AND SOLUTIONS
+
+6.1 Challenge: LLM API Reliability
+Solution: Implemented retry logic and mock responses for resilience
+
+6.2 Challenge: File Format Variability
+Solution: Used specialized libraries for PDF and docx parsing
+
+6.3 Challenge: Async Processing Complexity
+Solution: Used in-memory task storage with status tracking
+
+7. CONCLUSION
+
+The AI-driven candidate evaluation system successfully demonstrates the integration of backend engineering with advanced AI workflows. The implementation showcases prompt design, LLM chaining, RAG, and robust error handling. The system provides accurate, structured evaluations that can streamline the recruitment process.
+
+Future improvements could include:
+- Persistent database integration
+- Advanced vector database (e.g., Pinecone, Weaviate)
+- Authentication and user management
+- Dashboard for evaluation visualization
+- Multi-language support
+
+8. TRADE-OFFS
+
+- In-memory storage: Simple but not persistent (trade-off for quick implementation)
+- Mock LLM responses: Ensures functionality without API costs (trade-off for reliability)
+- Basic vector DB: Functional but not optimized for large-scale retrieval
+
+9. DEPLOYMENT INSTRUCTIONS
+
+1. Install dependencies: npm install
+2. Set OpenAI API key (optional): export OPENAI_API_KEY=your_key
+3. Start server: npm start
+4. Server runs on http://localhost:3000
+
+10. REFERENCES
+
+- OpenAI API Documentation
+- Express.js Framework Guide
+- Node.js Best Practices

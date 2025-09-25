@@ -1,0 +1,72 @@
+Ahmad Rahman
+Jl. Sudirman No. 45, Jakarta Pusat, Indonesia
+Phone: +6281382636109 | Email: ahmad.rahman@email.com | LinkedIn: linkedin.com/in/ahmadrahman
+
+PROFESSIONAL SUMMARY
+Pengembang Backend berpengalaman dengan 4 tahun keahlian dalam membangun aplikasi web skalabel menggunakan Node.js, Python, dan teknologi cloud. Mahir dalam manajemen database, pengembangan API, dan integrasi solusi AI/LLM. Pemecah masalah yang kuat dengan passion belajar teknologi baru dan menghasilkan proyek berdampak tinggi.
+
+SKILLS
+- Bahasa Pemrograman: JavaScript (Node.js), Python, SQL
+- Frameworks & Libraries: Express.js, Django, Flask
+- Databases: MySQL, PostgreSQL, MongoDB
+- Platform Cloud: AWS (EC2, S3, Lambda), GCP
+- Tools & Technologies: Docker, Kubernetes, Git, RESTful APIs, GraphQL
+- AI/LLM: Paparan dasar OpenAI API, prompt engineering
+- Lainnya: Agile/Scrum, CI/CD, Unit Testing (Jest, Mocha)
+
+PENGALAMAN PROFESIONAL
+
+Senior Backend Developer
+PT TechCorp Indonesia, Jakarta
+Juni 2021 - Sekarang
+- Mengembangkan dan memelihara RESTful APIs yang melayani 100k+ pengguna, meningkatkan waktu respons sebesar 30%.
+- Memimpin migrasi aplikasi monolitik ke arsitektur microservices di AWS, mengurangi waktu deployment sebesar 50%.
+- Mengintegrasikan fitur AI menggunakan OpenAI API untuk chatbot, meningkatkan engagement pengguna.
+- Berkolaborasi dengan tim lintas fungsi dalam lingkungan Agile, menyelesaikan proyek tepat waktu.
+
+Backend Developer
+StartupXYZ Indonesia, Remote
+Januari 2020 - Mei 2021
+- Membangun sistem backend skalabel menggunakan Node.js dan MongoDB untuk platform e-commerce.
+- Mengimplementasikan sistem autentikasi dan otorisasi, memastikan keamanan data.
+- Mengoptimalkan query database, meningkatkan performa aplikasi sebesar 40%.
+- Berkontribusi pada proyek open-source, mendapatkan pengakuan di komunitas developer.
+
+Junior Developer
+PT WebSolutions Indonesia, Jakarta
+Juli 2018 - Desember 2019
+- Membantu mengembangkan aplikasi web menggunakan Python dan Django.
+- Memelihara dan melakukan debug pada codebase yang ada, memperbaiki bug kritis.
+- Berpartisipasi dalam code reviews dan membimbing anggota tim junior.
+
+PENDIDIKAN
+
+Sarjana Ilmu Komputer
+Universitas Indonesia, Depok
+Lulus: Mei 2018
+- IPK: 3.7/4.0
+- Mata Kuliah Relevan: Struktur Data, Algoritma, Sistem Database, Machine Learning
+
+PROYEK
+
+Chatbot Berbasis AI (Proyek Pribadi)
+- Mengembangkan chatbot menggunakan OpenAI GPT-3 untuk otomasi dukungan pelanggan.
+- Mengintegrasikan dengan sistem CRM yang ada, mengurangi waktu respons sebesar 60%.
+- Teknologi: Node.js, OpenAI API, MongoDB
+
+E-Commerce API (TechCorp)
+- Merancang dan mengimplementasikan REST API untuk toko online dengan integrasi pembayaran.
+- Menangani 10k+ transaksi harian dengan uptime 99.9%.
+- Teknologi: Express.js, PostgreSQL, Stripe API
+
+SERTIFIKASI
+- AWS Certified Solutions Architect (2022)
+- Google Cloud Professional Cloud Architect (2021)
+- Certified ScrumMaster (2020)
+
+BAHASA
+- Bahasa Indonesia: Asli
+- English: Mahir
+
+REFERENCES
+Available upon request.
